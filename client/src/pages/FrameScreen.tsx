@@ -7,6 +7,7 @@ import { HeroSection } from "./sections/HeroSection";
 import { IndustriesSection } from "./sections/IndustriesSection";
 import { SolutionsSection } from "./sections/SolutionsSection";
 import { TransformationSection } from "./sections/TransformationSection";
+import { MobileMenu } from "./sections/MobileMenu";
 
 export const FrameScreen = (): JSX.Element => {
   return (
@@ -28,6 +29,10 @@ export const FrameScreen = (): JSX.Element => {
         alt="Group"
         src="/figmaAssets/group-66.png"
       />
+
+      <div className="fixed top-4 right-4 w-[280px] h-auto z-50">
+        <MobileMenu />
+      </div>
 
       <HeroSection />
 
