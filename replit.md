@@ -1,4 +1,4 @@
-# Overview
+# Overview updated
 
 This is a full-stack web application built with React, Express, and TypeScript. The project appears to be a corporate website for AMY Technology LLC, showcasing AI and technology solutions. The application uses a modern tech stack with Vite for frontend bundling, shadcn/ui for UI components, and Drizzle ORM for database management. The architecture follows a monorepo structure with shared code between client and server.
 
