@@ -6,14 +6,24 @@ import { Textarea } from "@/components/ui/textarea";
 
 export const FooterSection = (): JSX.Element => {
   return (
-    <section className="flex flex-col w-full items-center gap-20 py-20">
+    <section className="flex flex-col w-full items-center gap-20 py-20 mt-32">
       <div className="flex flex-col items-center gap-4 w-full max-w-[1000px] px-4">
         <div className="flex flex-col items-center w-full">
           <h2 className="font-AMY-title-thin font-[number:var(--AMY-title-thin-font-weight)] text-white text-[length:var(--AMY-title-thin-font-size)] text-center tracking-[var(--AMY-title-thin-letter-spacing)] leading-[var(--AMY-title-thin-line-height)] whitespace-nowrap [font-style:var(--AMY-title-thin-font-style)]">
             LET&apos;S
           </h2>
 
-          <h1 className="bg-[linear-gradient(to_bottom_right,rgba(78,216,255,1)_0%,rgba(45,132,240,1)_50%)_bottom_right_/_50%_50%_no-repeat,linear-gradient(to_bottom_left,rgba(78,216,255,1)_0%,rgba(45,132,240,1)_50%)_bottom_left_/_50%_50%_no-repeat,linear-gradient(to_top_left,rgba(78,216,255,1)_0%,rgba(45,132,240,1)_50%)_top_left_/_50%_50%_no-repeat,linear-gradient(to_top_right,rgba(78,216,255,1)_0%,rgba(45,132,240,1)_50%)_top_right_/_50%_50%_no-repeat] [-webkit-background-clip:text] bg-clip-text [-webkit-text-fill-color:transparent] [text-fill-color:transparent] font-AMY-title font-[number:var(--AMY-title-font-weight)] text-transparent text-[length:var(--AMY-title-font-size)] text-center tracking-[var(--AMY-title-letter-spacing)] leading-[var(--AMY-title-line-height)] whitespace-nowrap [font-style:var(--AMY-title-font-style)]">
+          <h1
+            className="font-AMY-title font-[number:var(--AMY-title-font-weight)] text-[length:var(--AMY-title-font-size)] text-center tracking-[var(--AMY-title-letter-spacing)] leading-[var(--AMY-title-line-height)] whitespace-nowrap [font-style:var(--AMY-title-font-style)]"
+            style={{
+              backgroundImage:
+                "linear-gradient(to top right, rgba(78,216,255,1) 0%, rgba(45,132,240,1) 100%)",
+              WebkitBackgroundClip: "text",
+              backgroundClip: "text",
+              WebkitTextFillColor: "transparent",
+              color: "transparent",
+            }}
+          >
             START YOUR TRANSFORMATION
           </h1>
         </div>
@@ -56,7 +66,7 @@ export const FooterSection = (): JSX.Element => {
         </div>
 
         <div className="flex items-center gap-3 py-2.5">
-          <Checkbox id="newsletter" className="w-6 h-6" />
+          <Checkbox id="newsletter" className="w-6 h-6 border-[#a2a5af]" />
           <label
             htmlFor="newsletter"
             className="[font-family:'Quicksand',Helvetica] font-normal text-[#a2a5af] text-[13px] tracking-[0] leading-5 cursor-pointer"
@@ -66,7 +76,13 @@ export const FooterSection = (): JSX.Element => {
           </label>
         </div>
 
-        <Button className="w-full h-auto px-5 py-2 rounded-lg bg-[linear-gradient(to_bottom_right,rgba(0,198,255,1)_0%,rgba(0,114,255,1)_50%)_bottom_right_/_50%_50%_no-repeat,linear-gradient(to_bottom_left,rgba(0,198,255,1)_0%,rgba(0,114,255,1)_50%)_bottom_left_/_50%_50%_no-repeat,linear-gradient(to_top_left,rgba(0,198,255,1)_0%,rgba(0,114,255,1)_50%)_top_left_/_50%_50%_no-repeat,linear-gradient(to_top_right,rgba(0,198,255,1)_0%,rgba(0,114,255,1)_50%)_top_right_/_50%_50%_no-repeat] hover:opacity-90">
+        <Button
+          className="w-full h-auto px-5 py-2 rounded-lg hover:opacity-90 border-0 shadow-none"
+          style={{
+            backgroundImage:
+              "linear-gradient(to top right, rgba(0,198,255,1) 0%, rgba(0,114,255,1) 100%)",
+          }}
+        >
           <span className="[font-family:'Montserrat',Helvetica] font-bold text-white text-base text-center tracking-[0] leading-6">
             SEND
           </span>

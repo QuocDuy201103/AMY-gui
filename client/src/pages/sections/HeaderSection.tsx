@@ -49,9 +49,10 @@ const industriesData = [
 
 export const HeaderSection = (): JSX.Element => {
   return (
-    <footer className="flex items-start gap-[120px] w-full">
-      <div className="flex flex-col w-[360px] items-start gap-[23px]">
-        <div className="flex flex-col w-[361px] items-start gap-[22px] mr-[-1.00px]">
+    <footer className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-10 lg:gap-[120px] w-full max-w-[1200px] mx-auto px-4 lg:px-0 mt-16 lg:mt-24 mb-16 lg:mb-[140px]">
+      {/* Left: logo + description */}
+      <div className="flex flex-col w-full lg:w-[360px] items-start gap-[23px]">
+        <div className="flex flex-col w-full items-start gap-[22px] mr-0">
           <div className="inline-flex h-[30px] items-center gap-4">
             <img
               className="w-[78.17px] h-[26px]"
@@ -62,13 +63,13 @@ export const HeaderSection = (): JSX.Element => {
               AMY Technology LLC
             </h2>
           </div>
-          <p className="self-stretch font-undertitle font-[number:var(--undertitle-font-weight)] text-[#a2a5af] text-[length:var(--undertitle-font-size)] tracking-[var(--undertitle-letter-spacing)] leading-[var(--undertitle-line-height)] [font-style:var(--undertitle-font-style)]">
+          <p className="self-stretch font-undertitle font-[number:var(--undertitle-font-weight)] text-[#a2a5af] text-sm sm:text-[length:var(--undertitle-font-size)] tracking-[var(--undertitle-letter-spacing)] leading-relaxed sm:leading-[var(--undertitle-line-height)] [font-style:var(--undertitle-font-style)]">
             Empowering businesses through advanced AI solutions and digital
             transformation.
           </p>
         </div>
 
-        <address className="flex flex-col w-[361px] items-start gap-[15px] not-italic mr-[-1.00px]">
+        <address className="flex flex-col w-full items-start gap-[15px] not-italic mr-0">
           {contactInfo.map((contact, index) => (
             <div key={index} className="inline-flex items-center gap-2.5">
               {contact.useImg ? (
@@ -92,7 +93,8 @@ export const HeaderSection = (): JSX.Element => {
         </address>
       </div>
 
-      <nav className="flex flex-col w-[200px] items-start gap-6 pt-[54px]">
+      {/* Middle: Solutions links */}
+      <nav className="flex flex-col w-full sm:w-[200px] items-start gap-6 pt-4 lg:pt-[54px]">
         <h3 className="self-stretch font-semibold-15 font-[number:var(--semibold-15-font-weight)] text-white text-[length:var(--semibold-15-font-size)] tracking-[var(--semibold-15-letter-spacing)] leading-[var(--semibold-15-line-height)] [font-style:var(--semibold-15-font-style)]">
           {solutionsData[0].title}
         </h3>
@@ -122,7 +124,8 @@ export const HeaderSection = (): JSX.Element => {
         </div>
       </nav>
 
-      <nav className="flex flex-col w-[200px] items-start gap-6 pt-[54px]">
+      {/* Right: Industries links */}
+      <nav className="flex flex-col w-full sm:w-[200px] items-start gap-6 pt-4 lg:pt-[54px]">
         <h3 className="self-stretch font-semibold-15 font-[number:var(--semibold-15-font-weight)] text-white text-[length:var(--semibold-15-font-size)] tracking-[var(--semibold-15-letter-spacing)] leading-[var(--semibold-15-line-height)] [font-style:var(--semibold-15-font-style)]">
           {industriesData[0].title}
         </h3>

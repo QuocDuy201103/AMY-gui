@@ -11,21 +11,21 @@ import { NavigationHeader } from "./sections/NavigationHeader";
 
 export const FrameScreen = (): JSX.Element => {
   return (
-    <div className="relative w-full min-h-screen overflow-hidden bg-[linear-gradient(180deg,rgba(0,16,67,1)_0%,rgba(0,7,29,1)_50%)]">
+    <div className="relative border-none shadow-none w-full min-h-screen overflow-hidden bg-[linear-gradient(to_bottom,#001043_0%,#00071d_53.5%)]">
       <img
-        className="absolute top-[360px] left-1/2 -translate-x-1/2 w-[1108px] h-[542px] pointer-events-none"
+        className="absolute top-[330px] left-1/2 -translate-x-1/2 w-[1040px] h-[546px] pointer-events-none"
         alt="Earth"
         src="/figmaAssets/earth.png"
       />
 
       <img
-        className="absolute top-[4521px] left-0 w-[581px] h-[1082px] pointer-events-none"
+        className="absolute top-[4700px] left-0 w-[640px] h-[1082px] pointer-events-none"
         alt="Group"
         src="/figmaAssets/group-78.png"
       />
 
       <img
-        className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[1440px] h-[316px] pointer-events-none"
+        className="absolute bottom-[-268px] left-1/2 -translate-x-1/2 !max-w-[3440px] w-[2440px] h-[500px] pointer-events-none"
         alt="Group"
         src="/figmaAssets/group-66.png"
       />

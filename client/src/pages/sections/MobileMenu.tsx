@@ -3,7 +3,7 @@ import React from "react";
 export const MobileMenu = (): JSX.Element => {
   return (
     <div 
-      className="bg-[#010c34] border border-[#515668] border-solid flex flex-col gap-[28px] items-end p-[32px] rounded-[20px] w-full h-full"
+      className="bg-[#010c34] flex flex-col gap-[28px] items-end p-[32px] rounded-[20px] w-full h-full"
       data-node-id="1:7682"
     >
       <div 

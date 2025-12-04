@@ -38,9 +38,9 @@ export const TransformationSection = (): JSX.Element => {
   return (
     <section className="relative w-full py-0">
       <img
-        className="absolute bottom-0 left-0 w-full h-auto"
+        className="absolute top-[500px] left-1/2 -translate-x-1/2 w-full max-w-[1410px] h-auto"
         alt="Mask group"
-        src="/figmaAssets/mask-group-1.png"
+        src="/figmaAssets/hand.png"
       />
 
       <div className="flex flex-col w-full max-w-[708px] items-center gap-4 mx-auto px-4">
@@ -49,7 +49,17 @@ export const TransformationSection = (): JSX.Element => {
             WHY
           </h3>
 
-          <h2 className="-mt-1 w-full bg-[linear-gradient(to_bottom_right,rgba(78,216,255,1)_0%,rgba(45,132,240,1)_50%)_bottom_right_/_50%_50%_no-repeat,linear-gradient(to_bottom_left,rgba(78,216,255,1)_0%,rgba(45,132,240,1)_50%)_bottom_left_/_50%_50%_no-repeat,linear-gradient(to_top_left,rgba(78,216,255,1)_0%,rgba(45,132,240,1)_50%)_top_left_/_50%_50%_no-repeat,linear-gradient(to_top_right,rgba(78,216,255,1)_0%,rgba(45,132,240,1)_50%)_top_right_/_50%_50%_no-repeat] [-webkit-background-clip:text] bg-clip-text [-webkit-text-fill-color:transparent] [text-fill-color:transparent] font-AMY-title font-[number:var(--AMY-title-font-weight)] text-transparent text-[length:var(--AMY-title-font-size)] text-center tracking-[var(--AMY-title-letter-spacing)] leading-[var(--AMY-title-line-height)] [font-style:var(--AMY-title-font-style)]">
+          <h2
+            className="-mt-1 w-full font-AMY-title font-[number:var(--AMY-title-font-weight)] text-[length:var(--AMY-title-font-size)] text-center tracking-[var(--AMY-title-letter-spacing)] leading-[var(--AMY-title-line-height)] [font-style:var(--AMY-title-font-style)]"
+            style={{
+              backgroundImage:
+                "linear-gradient(to top right, rgba(78,216,255,1) 0%, rgba(45,132,240,1) 100%)",
+              WebkitBackgroundClip: "text",
+              backgroundClip: "text",
+              WebkitTextFillColor: "transparent",
+              color: "transparent",
+            }}
+          >
             CHOOSE AMY TECHNOLOGY
           </h2>
         </header>
@@ -60,11 +70,13 @@ export const TransformationSection = (): JSX.Element => {
         </p>
       </div>
 
-      <div className="flex flex-wrap justify-center items-start gap-8 mt-[200px] px-4 max-w-[1000px] mx-auto">
+      <div className="flex flex-col md:flex-row justify-center items-start gap-6 md:gap-8 mt-10 md:mt-[100px] px-4 max-w-[1000px] mx-auto">
         {cardData.map((card, index) => (
           <Card
             key={index}
-            className="flex-col w-full max-w-[312px] h-auto min-h-[283px] items-center gap-5 p-8 rounded-3xl border-[none] flex relative before:content-[''] before:absolute before:inset-0 before:p-px before:rounded-3xl before:[background:linear-gradient(180deg,rgba(0,197,255,1)_16%,rgba(0,0,0,0)_87%)] before:[-webkit-mask:linear-gradient(#fff_0_0)_content-box,linear-gradient(#fff_0_0)] before:[-webkit-mask-composite:xor] before:[mask-composite:exclude] before:z-[1] before:pointer-events-none"
+            className={`flex-col w-full md:max-w-[312px] h-auto min-h-[260px] md:min-h-[347px] border-none items-center gap-5 p-8 rounded-3xl flex relative before:content-[''] before:absolute before:inset-0 before:p-px before:rounded-3xl before:[background:linear-gradient(180deg,rgba(0,197,255,0.6)_0%,rgba(0,197,255,0.05)_40%,rgba(0,0,0,0)_100%)] before:[-webkit-mask:linear-gradient(#fff_0_0)_content-box,linear-gradient(#fff_0_0)] before:[-webkit-mask-composite:xor] before:[mask-composite:exclude] before:z-[1] before:pointer-events-none ${
+              index === 1 ? "mt-4 md:mt-0" : "mt-0 md:mt-10"
+            }`}
           >
             <CardContent className="flex flex-col items-center gap-5 p-0 w-full">
               <h3 className="w-full font-title-17 font-[number:var(--title-17-font-weight)] text-white text-[length:var(--title-17-font-size)] text-center tracking-[var(--title-17-letter-spacing)] leading-[var(--title-17-line-height)] [font-style:var(--title-17-font-style)]">
