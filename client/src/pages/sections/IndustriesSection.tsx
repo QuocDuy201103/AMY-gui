@@ -46,7 +46,7 @@ const solutions = [
 
 export const IndustriesSection = (): JSX.Element => {
   return (
-    <section className="relative border-none shadow-none w-full min-h-[1007px] flex flex-col gap-12 sm:gap-20 items-center my-24 sm:my-48 px-4 bg-[url(/figmaAssets/decor.png)] bg-no-repeat bg-center bg-[length:1439px_1007px]">
+    <section className="relative border-none shadow-none w-full min-h-[1007px] flex flex-col gap-12 sm:gap-20 items-center my-24 sm:my-48 px-4 md:bg-[url(/figmaAssets/decor.png)] bg-no-repeat bg-center bg-[length:1439px_1007px]">
       {/* Header */}
       <header className="flex h-36 w-full max-w-[708px] flex-col items-center gap-4 z-10 relative">
         <div className="flex flex-col items-center w-full">
@@ -104,7 +104,7 @@ export const IndustriesSection = (): JSX.Element => {
                   {solution.title}
                 </h3>
 
-                <p className="self-stretch [font-family:'Montserrat',Helvetica] font-normal text-[#a2a5af] text-sm tracking-[0] leading-5">
+                <p className="self-stretch [font-family:'Montserrat',Helvetica] font-normal text-[#a2a5af] text-sm tracking-[0] leading-5 max-[680px]:max-w-[22ch]">
                   {solution.description}
                 </p>
 

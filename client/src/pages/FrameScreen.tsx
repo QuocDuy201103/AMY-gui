@@ -13,7 +13,7 @@ export const FrameScreen = (): JSX.Element => {
   return (
     <div className="relative border-none shadow-none w-full min-h-screen overflow-hidden bg-[linear-gradient(to_bottom,#001043_0%,#00071d_53.5%)]">
       <img
-        className="absolute top-[330px] left-1/2 -translate-x-1/2 w-[1040px] h-[546px] pointer-events-none"
+        className="hidden md:block absolute top-[330px] left-1/2 -translate-x-1/2 w-[1040px] h-[546px] pointer-events-none"
         alt="Earth"
         src="/figmaAssets/earth.png"
       />

@@ -38,7 +38,7 @@ export const TransformationSection = (): JSX.Element => {
   return (
     <section className="relative w-full py-0">
       <img
-        className="absolute top-[500px] left-1/2 -translate-x-1/2 w-full max-w-[1410px] h-auto"
+        className="hidden md:block absolute top-[500px] left-1/2 -translate-x-1/2 w-full max-w-[1410px] h-auto"
         alt="Mask group"
         src="/figmaAssets/hand.png"
       />

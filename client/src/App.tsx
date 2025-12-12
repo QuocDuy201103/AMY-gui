@@ -6,12 +6,17 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import NotFound from "@/pages/not-found";
 
 import { FrameScreen } from "@/pages/FrameScreen";
+import { AdminLogin } from "@/pages/AdminLogin";
+import { AdminContacts } from "@/pages/AdminContacts";
 
 function Router() {
   return (
     <Switch>
       {/* Add pages below */}
       <Route path="/" component={FrameScreen} />
+      <Route path="/admin" component={AdminLogin} />
+      <Route path="/admin/login" component={AdminLogin} />
+      <Route path="/admin/contacts" component={AdminContacts} />
       {/* Fallback to 404 */}
       <Route component={NotFound} />
     </Switch>
